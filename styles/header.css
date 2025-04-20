@@ -1,0 +1,240 @@
+.header{
+    height: 70px; 
+
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+    z-index: 100;
+}
+.top-bar{
+    position:absolute; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:65px;
+    bottom: 10px;
+}
+
+.all{
+    background-color: white;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 75px;
+    left: 90px;
+    text-wrap: nowrap;
+}
+.category {
+    padding-left: 8px;
+    padding-right:8px ;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    margin-right: 6px;
+
+    font-family: roboto, arial;
+    font-weight: 475;
+
+    background-color: rgb(240, 240, 240);
+    border:none;
+    border-radius: 9px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+  
+
+.search-bar{
+    flex: 1;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 16px; 
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;  
+
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.05);
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+
+    width: 0;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+
+.search-icon{
+    height: 25px;
+}
+.voice-search-icon{
+    height: 20px;
+}
+
+
+.left-section{
+    display: flex;  
+    max-width: 300px;
+    align-items: center;
+}
+
+.hamburger-menu{
+    cursor: pointer;
+    height: 24px;
+    margin-left: 24px;
+    margin-right:24px; 
+}
+.youtube-logo{
+    height: 20px;
+}
+
+
+.mid-section{
+    flex: 1; 
+    margin-left: 70px;
+    margin-right: 40px; 
+
+    max-width: 650px;
+    display: flex; 
+    align-items: center;
+}
+
+.search-button, .voice-search-button, .notification-tool{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.search-button{
+    height: 38px; 
+    width: 60px; 
+    background-color: rgb(240, 240, 240);
+    margin-left: -1px;
+    cursor: pointer;
+
+    border-width: 1px;
+    border-color: grey;  
+    border-style: solid;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+
+    margin-right: 10px; 
+
+}
+.search-button .tooltip, .voice-search-button .tooltip, .notification-tool .tooltip{
+    position: absolute;
+    background-color: grey;
+    color: white;
+    font-family: roboto, arial;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+
+    border-radius: 2px;
+
+    font-size: 14px;
+    
+    bottom: -30px;
+    opacity: 0;
+
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip, .notification-tool:hover .tooltip{
+    z-index: 300;
+    opacity: 1;
+}
+
+
+.voice-search-button{
+    height: 36px; 
+    width: 36px; 
+    cursor: pointer;
+
+    border: none;  
+    border-radius: 18px;
+    background-color: rgb(239, 239, 239);
+}
+
+.right-section{
+    width: 200px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+
+.create-button{
+    height: 36px; 
+    width: 96px;
+    font-size: bold;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;  
+    border-radius: 48px;
+    background-color: rgb(239, 239, 239);
+}
+.plus-icon{
+    padding-right: 4px;
+    height: 18px;
+}
+
+.create-word{
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+
+
+.notification-icon{
+    height: 24px;
+}
+
+.notification-icon-container{
+    position: relative;
+    cursor: pointer;
+}
+.notification-counter{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+
+    background-color: rgb(228, 0, 0);
+    color: white;
+    font-family: roboto, arial;
+    font-size: 12px;
+
+    padding-left: 5px;
+    padding-right: 5px;  
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    border-radius: 10px;
+}
+
+.my-pf{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+
+
